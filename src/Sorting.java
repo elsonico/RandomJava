@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Sorting {
     
-    /* Insertion sort algorhytm */
+    /* Insertion sort algorithm */
     public static int[] sort(int[] arr) {
         int x;
         int j;
