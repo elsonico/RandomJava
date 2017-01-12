@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Sorting {
-
+    
+    /* Insertion sort algorhytm */
     public static int[] sort(int[] arr) {
         int x;
         int j;
@@ -16,7 +17,7 @@ public class Sorting {
         }
         return arr;
     }
-
+    /* Method for printing an int[] */
     public static void printArr(int[] arr) {
         System.out.print("[");
         for (int idx = 0 ; idx < arr.length - 1 ; idx++) {
@@ -25,7 +26,7 @@ public class Sorting {
         System.out.printf(" %d ]", arr[arr.length-1]);
         System.out.println();
     }
-
+    /* Main method */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Give me list of numbers: ");
