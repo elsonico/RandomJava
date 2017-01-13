@@ -21,16 +21,16 @@ public class Sorting {
     public static void printArr(int[] arr) {
         System.out.print("[");
         for (int idx = 0 ; idx < arr.length - 1 ; idx++) {
-            System.out.printf(" %d,", arr[idx]);
+            System.out.printf("\'%d\', ", arr[idx]);
         }
-        System.out.printf(" %d ]", arr[arr.length-1]);
+        System.out.printf("\'%d\']", arr[arr.length-1]);
         System.out.println();
     }
     /* Main method */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Give me list of numbers: ");
-        String[] line = sc.nextLine().split(" ");
+        String[] line = sc.nextLine().trim().split(" ");
         int length = line.length;
         int[] arr = new int[length];
         for (int idx = 0 ; idx < length ; idx++) {
