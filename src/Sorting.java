@@ -34,7 +34,12 @@ public class Sorting {
         int length = line.length;
         int[] arr = new int[length];
         for (int idx = 0 ; idx < length ; idx++) {
+           try {
             arr[idx] = Integer.parseInt(line[idx]);
+            }
+            catch (NumberFormatException err) {
+                System.out.printf("Please list only numbers: %s", err);
+            }
         }
         printArr(sort(arr));
         sc.close();
